@@ -1,4 +1,5 @@
 call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 scriptencoding utf-8             " Use UTF-8
 set autoindent
