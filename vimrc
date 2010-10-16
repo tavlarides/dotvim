@@ -95,6 +95,8 @@ nmap <silent> <leader>fb :FufBuffer<cr>
 nmap <silent> <leader>fr :FufMruFile<cr>
 nmap <silent> <leader>fc :FufMruCmd<cr>
 nmap <silent> <leader>fo :FufDirWithCurrentBufferDir<cr>
+nmap <silent> <leader>fj :FufJumpList<cr>
+nmap <silent> <leader>fx :FufQuickfix<cr>
 
 nmap <silent> <leader>l :set list!<cr>
 nmap <silent> <leader>h :set hlsearch!<cr>
