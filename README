@@ -2,11 +2,19 @@ This is my vim configuration files
 
 To install clone from github
 
-git clone git://github.com/tavlarides/dotvim.git ~/.vim
-
+	git clone git://github.com/tavlarides/dotvim.git ~/.vim
 
 and create the symlinks:
 
-ln -s ~/.vim/vimrc ~/.vimrc
-ln -s ~/.gvim/vimrc ~/.gvimrc
+	ln -s ~/.vim/vimrc ~/.vimrc
+	ln -s ~/.gvim/vimrc ~/.gvimrc
+
+Switch to the `~/.vim` directory, and fetch submodules:
+
+	cd ~/.vim
+	git submodule init
+	git submodule update
+
+Thanks to Drew Neil for his excelent screencasts.
+http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 
