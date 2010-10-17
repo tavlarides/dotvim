@@ -70,19 +70,22 @@ autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
 ""keyboard
 let mapleader=","
 
+" Visually select the text that was last edited/pasted
+nmap gV `[v`]nmap <C-s> :w<cr>
+
 imap <S-cr> <esc>O
 imap <C-cr> <esc>o
 nmap <S-cr> O<esc>
-nmap <cr> o<esc>
+nmap <C-cr> o<esc>
 
 "move selection one line down and reselect
-vmap <silent> <M-j> "hd"hp'[V']
+vmap <silent> <C-j> ]egv
 "move selection one line up and reselect
-vmap <silent> <M-k> "hdk"hP'[V']
+vmap <silent> <C-k> [egv
 "move current line down by one
-nmap <silent> <M-j> :move+<cr>
+nmap <silent> <C-j> ]e
 "move current line up by one
-nmap <silent> <M-k> :move-2<cr>
+nmap <silent> <C-k> [e
 
 nmap <leader>v :edit $MYVIMRC<cr>
 
@@ -124,18 +127,3 @@ cnoremap <M-f> <S-Right>
 let ruby_operators = 1
 
 command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
-
-
-" Show syntax highlighting groups for word under cursor
-nmap <C-S-P> :call <SID>SynStack()<CR>
-function! <SID>SynStack()
-  if !exists("*synstack")
-    return
-  endif
-  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
-endfunc
-
-if exists('*HexHighlight()')
-  nmap <leader>x :call HexHighlight()<Return>
-endif
-
