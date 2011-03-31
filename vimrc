@@ -12,6 +12,7 @@ set clipboard+=unnamed " turns out I do like is sharing windows clipboard
 set completeopt=menu,longest  "omni complete
 set cpoptions=aABcsFsn
 set cursorline " highlight active line
+set display+=lastline
 set directory=~/tmp " directory is the directory for temp file
 set encoding=utf-8
 set gdefault "replace all occurrences in line
@@ -77,6 +78,8 @@ imap <S-cr> <esc>O
 imap <C-cr> <esc>o
 nmap <S-cr> O<esc>
 nmap <C-cr> o<esc>
+
+inoremap <cr> <c-g>u<cr>
 
 "move selection one line down and reselect
 vmap <silent> <C-j> ]egv
