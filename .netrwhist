@@ -1,8 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/usr/lib/vmware-installer/1.1'
 let g:netrw_dirhist_2='/home/dad/src/sinatra/first'
 let g:netrw_dirhist_3='/home/dad/src/sinatra/first/views'
 let g:netrw_dirhist_4='/home/dad/src/sinatra/first'
 let g:netrw_dirhist_5='/home/dad/src/sinatra/first/views'
 let g:netrw_dirhist_6='/home/dad/src/sinatra/first'
+let g:netrw_dirhist_7='/home/dad/src/sinatra/first/views'
+let g:netrw_dirhist_8='/home/dad/src/sinatra/first'
+let g:netrw_dirhist_9='/home/dad/src/sinatra/first/public'
