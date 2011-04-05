@@ -31,3 +31,9 @@
 [submodule "bundle/L9"]
 	path = bundle/L9
 	url = git://github.com/vim-scripts/L9.git
+[submodule "bundle/sinatra"]
+	path = bundle/sinatra
+	url = git://github.com/hallison/vim-ruby-sinatra.git
+[submodule "bundle/slim"]
+	path = bundle/slim
+	url = https://github.com/bbommarito/vim-slim.git
