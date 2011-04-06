@@ -60,11 +60,13 @@ colorscheme wombat256
 
 autocmd BufWritePost .vimrc source $MYVIMRC
 
+" Rakefile, Gemfile are Ruby
+autocmd BufRead,BufNewFile {Gemfile,Rakefile,config.ru} set ft=ruby
+autocmd BufRead,BufNewFile *.slim set ft=slim
+
 " Syntax of these languages is fussy over tabs Vs spaces
 autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
-autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType html,yaml,css setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
 
 """""""""""""""""""""
@@ -96,7 +98,7 @@ let g:fuf_modesDisable = []
 let g:fuf_mrufile_maxItem = 300
 let g:fuf_mrucmd_maxItem = 400
 
-nmap <silent> <leader>ff :FufFileWithFullCwd **/<cr>
+nmap <silent> <leader>ff :FufFileWithFullCwd<cr>
 nmap <silent> <leader>fb :FufBuffer<cr>
 nmap <silent> <leader>fr :FufMruFile<cr>
 nmap <silent> <leader>fc :FufMruCmd<cr>
