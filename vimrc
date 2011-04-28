@@ -81,7 +81,7 @@ imap <C-cr> <esc>o
 nmap <S-cr> O<esc>
 nmap <C-cr> o<esc>
 
-inoremap <cr> <c-g>u<cr>
+inoremap <cr> <C-g>u<cr>
 
 "move selection one line down and reselect
 vmap <silent> <C-j> ]egv
@@ -102,7 +102,7 @@ nmap <silent> <leader>ff :FufFileWithFullCwd<cr>
 nmap <silent> <leader>fb :FufBuffer<cr>
 nmap <silent> <leader>fr :FufMruFile<cr>
 nmap <silent> <leader>fc :FufMruCmd<cr>
-nmap <silent> <leader>fo :FufDirWithCurrentBufferDir<cr>
+nmap <silent> <leader>fo :FufFileWithCurrentBufferDir<cr>
 nmap <silent> <leader>fj :FufJumpList<cr>
 nmap <silent> <leader>fx :FufQuickfix<cr>
 
