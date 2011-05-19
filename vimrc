@@ -52,11 +52,11 @@ filetype on " detect the type of file
 filetype plugin on " load file type plug ins
 filetype indent on " Enable file type-specific indenting and plug ins
 syntax enable
+set background=light
+colorscheme solarized
 
 "enable match it
 :source $VIMRUNTIME/macros/matchit.vim
-
-colorscheme wombat256
 
 autocmd BufWritePost .vimrc source $MYVIMRC
 

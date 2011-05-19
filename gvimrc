@@ -1,4 +1,4 @@
-colorscheme wombat256
+"colorscheme wombat256
 set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\ 
 set showbreak=↪
 set cpoptions=aABcsFsn
