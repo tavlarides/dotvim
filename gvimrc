@@ -1,9 +1,8 @@
-"colorscheme wombat256
 set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\ 
 set showbreak=↪
 set cpoptions=aABcsFsn
 set visualbell t_vb=
-set guifont=Inconsolata\ Medium\ 13
+set guifont=Inconsolata\ Medium\ 12
 set guioptions-=L
 set guioptions-=m
 set guioptions-=R
@@ -26,8 +25,8 @@ set statusline +=%1*%4c\ %*           	"column number
 set statusline +=%{fugitive#statusline()} "git branch (if any)
 set laststatus=2
 
-hi User1 guifg=#eea040 guibg=#333333
-hi User2 guifg=#dd3333 guibg=#333333
-hi User3 guifg=#ff66ff guibg=#333333
-hi User4 guifg=#a0ee40 guibg=#333333
-hi User5 guifg=#eeee40 guibg=#333333
+"hi User1 guifg=#eea040 guibg=#333333
+"hi User2 guifg=#dd3333 guibg=#333333
+"hi User3 guifg=#ff66ff guibg=#333333
+"hi User4 guifg=#a0ee40 guibg=#333333
+"hi User5 guifg=#eeee40 guibg=#333333
