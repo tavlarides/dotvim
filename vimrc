@@ -53,6 +53,7 @@ filetype plugin on " load file type plug ins
 filetype indent on " Enable file type-specific indenting and plug ins
 syntax enable
 set background=light
+let g:solarized_termcolors=256
 colorscheme solarized
 
 "enable match it
