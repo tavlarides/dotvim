@@ -82,6 +82,7 @@ imap <C-cr> <esc>o
 nmap <S-cr> O<esc>
 nmap <C-cr> o<esc>
 
+inoremap <S-Space> <esc>bi:<esc>ea => 
 inoremap <cr> <C-g>u<cr>
 
 "move selection one line down and reselect
